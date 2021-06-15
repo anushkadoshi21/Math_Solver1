@@ -37,7 +37,7 @@
       
     const tensor=tf.tensor(dat);
 
-      const model=await tf.loadGraphModel('tfjs/model.json');
+      const model=await tf.loadGraphModel('model/model.json');
 
       const ans=model.predict(tensor);
       ans.print();
