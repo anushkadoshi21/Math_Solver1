@@ -5,8 +5,18 @@ function nxtquestion(){
     let a=Math.round(Math.random()*5);
     let b=Math.round(Math.random()*6);
     aa=a+b;
+    let c=Math.round(Math.random(0,1));
+    let d='+';
+    aa=a+b;
+    if (c==1){
+        a=Math.round(Math.random()*9);
+        b=Math.round(Math.random(0,a));
+        aa=a-b;
+        d='-'
+    }
     document.getElementById('n1').innerHTML=a;
     document.getElementById('n2').innerHTML=b;
+    document.getElementById('n3').innerHTML=d;
 }
 
 function checkans(anss){
